@@ -247,82 +247,102 @@ nav h2{
 }
 
 
-@media(max-width:768px){
+@media (max-width: 768px) {
 
+  /* GLOBAL FIX */
   .hero,
   .about,
   .services,
   .growth,
-  .contact{
-    padding:40px 20px;
+  .contact {
+    padding: 40px 20px;
+    height: auto;
   }
 
-  .hero h1,
-  .about h2,
-  .services h2,
-  .growth h2,
-  .contact h2{
-    font-size:35px;
+  /* HERO */
+  .hero h1 {
+    font-size: 40px;
   }
 
-  .about,
-  .growth,
-  .service-box,
-  .contact-box{
-    flex-direction:column;
+  .hero-content {
+    width: 100%;
   }
 
-  .card{
-    width:100%;
+  /* ABOUT */
+  .about {
+    flex-direction: column;
   }
 
-  .about-image img,
-  .growth img{
-    width:200px;
+  .about-text,
+  .about-image {
+    width: 100%;
   }
 
-  @media(max-width:768px){
+  .about-text {
+    padding: 40px 20px;
+  }
 
-    .about{
-        flex-direction:column;
-    }
+  .about-text h2 {
+    font-size: 32px;
+  }
 
-    .about-text,
-    .about-image{
-        width:100%;
-    }
+  .about-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
 
-    .about-text{
-        padding:40px 25px;
-    }
+  /* SERVICES */
+  .service-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
 
-    .about-text h2{
-        font-size:40px;
-    }
+  .services {
+    height: auto;
+    padding: 60px 20px;
+  }
 
-    .about-image{
-        min-height:250px;
-    }
+  .services h2 {
+    font-size: 28px;
+  }
 
-    .service-box{
-        flex-direction:column;
-        align-items:center;
-        gap:50px;
-    }
+  .card {
+    width: 100%;
+    max-width: 320px;
+  }
 
-    .services{
-        padding:60px 20px;
-    }
+  /* GROWTH */
+  .growth {
+    flex-direction: column;
+    gap: 40px;
+  }
 
-    .services h2{
-        font-size:30px;
-    }
+  .growth-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
 
-    .card{
-        width:100%;
-        max-width:320px;
-    }
+  .growth-text h2 {
+    font-size: 28px;
+    text-align: center;
+  }
 
-}
+  /* CONTACT */
+  .contact-image img {
+    height: 250px;
+  }
 
+  .contact-box {
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .contact-info-row {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
 }
