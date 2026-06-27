@@ -17,6 +17,22 @@ body{
   background:#dce9ef;
 }
 
+.bg-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-15deg);
+    font-size: 280px;
+    font-weight: 700;
+    color: #000;
+    opacity: 0.1;      /* Fade effect */
+    letter-spacing: 10px;
+    white-space: nowrap;
+    z-index: 1;
+    pointer-events: none;
+    user-select: none;
+}
+
 nav{
   display:flex;
   align-items:center;
